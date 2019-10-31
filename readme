@@ -1,0 +1,8 @@
+! Our dashboard needs localhost to login to see the entire dashboard.
+
+! Our database is connected to AWS which is online, you can access to it using our code.
+
+The database host is: isproject.czwxn60qeghl.us-east-1.rds.amazonaws.com
+            Port is: 3306
+            Username & Password: admin1234
+
