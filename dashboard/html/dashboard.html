@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+   Dashboard by Architecture Intelligence
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/now-ui-dashboard.css?v=1.3.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="orange">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+      <div class="logo" style="color:white;">
+       
+          Architecture Intelligence
+       
+      </div>
+      <div class="sidebar-wrapper" id="sidebar-wrapper">
+        <ul class="nav">
+          <li class="active ">
+            <a href="./dashboard.html">
+              <i class="now-ui-icons design_app"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li>
+            <a href="./help.html">
+              <i class="now-ui-icons education_atom"></i>
+              <p>Graph Info</p>
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <i class="now-ui-icons ui-1_bell-53"></i>
+              <p>Index Info</p>
+            </a>
+          </li>
+          <li>
+            <a href="./about.html">
+              <i class="now-ui-icons location_map-big"></i>
+              <p>About Us</p>
+            </a>
+          </li>
+    <img src="../pic/logo.png" style="margin: 97% 0 0 0"/>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel" id="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent  bg-primary  navbar-absolute">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+           <h5><b>Dashboard</b></h5>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <form>
+              <div class="input-group no-border">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <i class="now-ui-icons ui-1_zoom-bold"></i>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="panel-header panel-header-lg" style="height:50%;">
+         <div><h6 style="color:white; margin: 0 0 0 5%">Basic Information</h6></div>
+           <div style="text-align:center;">
+                  <h6 style="color:white;"><b>IPO Information(IPO Price-Date)</b></h6>
+                 <iframe width="100%" height="450" frameborder="0" scrolling="no" src="//plot.ly/~Pankick/12.embed"></iframe>             
+            </div>
+         </div>
+      </div>
+      <div style="float:left;height:60%; width:40%; margin:0 0 0 18%;">
+            <div style="text-align:center;margin:2% 0 0 0;">
+                  <h6 style="color:#073175">IPO Stock Price / Symbol</h6>
+                <iframe width="100%" height="380" frameborder="0" scrolling="no" src="//plot.ly/~Pankick/18.embed"></iframe>          
+            </div>
+      </div>
+      <div style="float:left;height:60%; width:40%; margin:0 0 0 0;">
+            <div style="text-align:center;">
+                  <h6 style="color:#073175;margin:2% 0 0 0;">Stock Amount / Symbol</h6>
+               <iframe width="100%" height="380" frameborder="0" scrolling="no" src="//plot.ly/~Pankick/16.embed"></iframe>         
+            </div>
+      </div>
+      <div style="float:left;height:1.5%; width:82%;margin: 5% 0 0 18%; background:#FF6347;border-radius:5px 5px 5px 5px">
+      <p>y</p>
+      </div>
+      <div style="float:left;height:6%; width:80%;margin: 3% 0 0 18%">
+           <div><h6 style="color:#073175;margin: 0 0 0 5%;">Definition of Lowball Price</h6></div>
+           <div style="text-align:left;margin: 2% 0 0 5%;width:80%;color:#4169E1;">
+                <p>Lowball is an offer that is significantly below the seller’s asking price, or a quote that is deliberately lower than the price the seller intends to charge.<br/></p>
+<p>Lowball prices on stock options are options allowing stock purchase price significantly below what the shares are really worth—the price that investors would pay for them.<br/></p>
+<p>Companies that issued this kind of options before IPO is regarded as lowball price options company and they would be chosen as components of Architecture Intelligence index pool.</p>
+
+           </div>
+      </div>
+      <div style="float:left;height:1.5%; width:82%;margin: 15% 0 0 18%; background:#FF6347;border-radius:5px 5px 5px 5px">
+      <p>y</p>
+      </div>
+      
+      <div style="float:left;height:40%; width:82%;margin: 3% 0 0 18%">
+            <div><h6 style="color:#073175; margin: 0 0 0 5%">Comparison Information</h6></div>
+            <div style="float:left;width:70%">
+                  <h6 style="color:#073175;margin:0 0 0 45%">Index Comparison</h6>
+               <iframe width="100%" height="380" frameborder="0" scrolling="no" src="//plot.ly/~ygao81/0.embed"></iframe>       
+            </div>
+            <div style="float:left;width:30%;">
+            <div style="margin:15% 0 0 10%;"><a href="index.html">Why do we choose S&P 500?<a></div>
+            <div style="margin:10% 0 0 10%;"><a href="index.html">How do we calculate the new index?<a></div>
+            </div>
+      </div>
+       <div style="float:left;height:1.5%; width:82%;margin: 12% 0 0 18%; background:#FF6347;border-radius:5px 5px 5px 5px">
+      <p>y</p>
+      </div>
+      <div style="float:left;height:60%; width:82%; margin:3% 0 0 18%;">
+      <div><h6 style="color:#073175; margin: 0 0 0 5%">Trend Information</h6></div>
+            <div style="float:left;width:70%">
+                  <h6 style="color:#073175;margin:0 0 0 34%;">The closing price trend of four clusters' company</h6>
+               <iframe width="100%" height="380" frameborder="0" scrolling="no" src="//plot.ly/~ygao81/2.embed"></iframe>         
+            </div>
+            <div style="float:left;width:30%;">
+            <div style="margin:10% 0 0 10%;"><a href="index.html">How are the four trends formed?<a></div>
+            <div style="margin:10% 0 0 10%;"><a href="index.html">Why do we choose closing price?<a></div>
+            </div>
+      </div>
+       <!--<div>
+       <form name="search" method="post" action="connect.php">
+        <div name="info"><h3>Search price</h3>
+		             <p>Company name *</br>
+						<input type="text" name="company_name" /> 
+					 </p>
+					 <p>Price</br> 
+					<input name="testvalue" value="<?php echo $result; ?>">
+					</p>	
+			    <div class="submit_bt">
+					 <input type="submit" value="submit" />
+				 </div>
+		</div>
+       </form>
+       </div>-->
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chart JS -->
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/now-ui-dashboard.min.js?v=1.3.0" type="text/javascript"></script>
+  <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../assets/demo/demo.js"></script>
+</body>
+</html>

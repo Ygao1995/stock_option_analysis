@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Dashboard by Architecture Intelligence
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/now-ui-dashboard.css?v=1.3.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="orange">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+      <div class="logo" style="color:white;">
+       
+          Architecture Intelligence
+
+      </div>
+      <div class="sidebar-wrapper" id="sidebar-wrapper">
+        <ul class="nav">
+          <li>
+            <a href="./dashboard.html">
+              <i class="now-ui-icons design_app"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="active ">
+            <a href="./help.html">
+              <i class="now-ui-icons education_atom"></i>
+              <p>Graph Info</p>
+            </a>
+          </li>
+          <li>
+            <a href="./index.html">
+              <i class="now-ui-icons ui-1_bell-53"></i>
+              <p>Index Info</p>
+            </a>
+          </li>
+          <li>
+            <a href="./about.html">
+              <i class="now-ui-icons location_map-big"></i>
+              <p>About Us</p>
+            </a>
+          </li>
+           <img src="../pic/logo.png" style="margin: 97% 0 0 0"/>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel" id="main-panel">
+      <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-transparent  bg-primary  navbar-absolute">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+           <h5><b>Graph--instruction</b></h5>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <form>
+              <div class="input-group no-border">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <i class="now-ui-icons ui-1_zoom-bold"></i>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="panel-header panel-header-sm">
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card ">
+              <div class="card-header ">
+               <h6> What do these <b style="color:navy">graphs</b> mean? & What <b style="color:navy">information</b> can we get from these graphs?</h6>
+              </div>
+              <div class="card-body ">
+                <div> 
+                <div style="height:30%; width: 80%" >
+                <p style="color:navy">IPO Information graph:</p><br/>
+                <p>The bubble plot, with IPO price as y axis and IPO data as x axis, illustrates the basic IPO information of companies having <b>low-ball price option that listed on the market</b>. Different colours show whichever market the stock listed and the size of bubble represents the <b>amount</b> of IPO value.  When holding the mouse onto the bubble, detailed information about listed date, IPO price and company name will be shown.</p>
+                </div>
+                <div style="height:30%; width: 80%" >
+                <br/><p style="color:navy">IPO stock price / symbol graph:</p><br/>
+                <p>This breakdown-bar chart focus on comparing IPO price of companies. It clearly show the gap among companies with low-ball price option went to public on <b>2015</b>. The vertical axis represent <b>IPO price</b>. and the horizontal axis represent the ticket name of a company. Holding the mouse on each bar, you will get the ticket of that company and the public offering price. </p>
+                </div>
+                <div style="height:30%; width: 80%" >
+                </br><p style="color:navy">Stock amount / symbol graph:</p><br/>
+                <p>This breakdown bar chart specifically visualize the <b>IPO value</b> of companies in the database. The vertical axis represent value with the unit of Billion(B) and the horizontal axis represent the ticket name of a company. User may put the mouse on a single bar, for instance FDC (FIRST DATA Corporation), and read exact listed value of the enterprise. </p>
+                </div>
+                 <div style="height:30%; width: 80%" >
+                <br/><p style="color:navy">Index Comparison graph:</p><br/>
+                <p>1. Both 2015 listed companies with and without lowball price stock options are in the general trend with the S&P 500. The general moving trend of the market has a <b>strong positive effect</b> on those companies general stock performance trend.</p> 
+<p>2. Compare index_lowball with S&P 500 and index_withoutlowball, it can be found that companies issued lowball price options had <b>greater growth rate but also higher risk-volatility</b>.</p> 
+<p>3. Consider the risk and premium of stock investment, invest in lowball price options company put a <b>higher standard on risk control</b> while also may bring investors a <b>higher return rate than market index portfolio</b>.</p>  
+                </div>
+                <div style="height:30%; width: 80%" >
+                </br><p style="color:navy">The closing price trend of four clusters' company graph:</p><br/>
+                <p>This plot shows the pattern of stock performance of companies in each cluster. Hold the mouse on the curves, users will see the accurate average closing price of clusters. It provides <b>a general insight of risk and growth potential of those companies</b>.</p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chart JS -->
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/now-ui-dashboard.min.js?v=1.3.0" type="text/javascript"></script>
+  <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../assets/demo/demo.js"></script>
+</body>
+
+</html>
